@@ -27,6 +27,11 @@ For update constantly, use the bash script as following
 sh get_webcast.sh contest_name BOCAIP
 ```
 
+Optionally, if you don't have ssh public key
+```
+sh get_webcast_wopass.sh contest_name BOCAIP ssh_password
+```
+
 If when running ask the remote-user(su privileges) password, configure a public/private ssh keys with
 ```
 (on your machine)
