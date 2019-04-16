@@ -1,7 +1,11 @@
 #!/bin/bash
 
 mkdir $1
-wget ${2}version/ -O $1/version
-wget ${2}runs/ -O $1/runs
-wget ${2}contest/ -O $1/contest
-wget ${2}time/ -O $1/time
+while true
+do
+    scp root@${2}:/var/www/boca/src/private/webcast/version $1/version
+    scp root@${2}:/var/www/boca/src/private/webcast/runs $1/runs
+    scp root@${2}:/var/www/boca/src/private/webcast/contest $1/contest
+    scp root@${2}:/var/www/boca/src/private/webcast/time $1/time
+    sleep 2
+done
