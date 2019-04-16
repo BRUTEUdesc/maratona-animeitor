@@ -1,4 +1,4 @@
-#Maratona-animeitor
+# Maratona-animeitor
 
 Animated scoreboard for BOCA judging system
 
