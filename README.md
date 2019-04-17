@@ -15,29 +15,21 @@ sudo apt install python2.7 python-pip
 python2.7 -m pip install -r requirements.txt
 ```
 
+### Configuring webcast on server
+
+To make webcast files being acessible, you should paste the `webcast1984` folder on path
+```
+/var/www/boca/src/
+```
+
 ## Running
 
 To start the scoreboard animation, run
 ```
-./main.py contest_name
+sh roda_webcasting.sh IPBOCA -s PREFIX
 ```
-
-For update constantly, use the bash script as following
-```
-sh get_webcast.sh contest_name BOCAIP
-```
-
-Optionally, if you don't have ssh public key
-```
-sh get_webcast_wokey.sh contest_name BOCAIP ssh_password
-```
-
-If when running ask the remote-user(su privileges) password, configure a public/private ssh keys with
-```
-(on your machine)
-ssh-keygen
-ssh-copy-id remote-user@BOCAIP
-```
+> IPBOCA: ip address
+> PREFIX: prefix to select team to show
 
 ## Scoreboard Usage
 
