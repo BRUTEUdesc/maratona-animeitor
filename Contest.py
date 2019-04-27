@@ -135,15 +135,15 @@ class Contest (object):
         print
         print textwrap.fill(' '.join(failedTeams))
         print
-        while True:
-            try:
-                ans = raw_input('Continue anyway? ').lower()
-            except KeyboardInterrupt:
-                ans = 'n'
-            if ans == 'y':
-                break
-            elif ans == 'n':
-                sys.exit(0)
+        # while True:
+        #     try:
+        #         ans = 'y'
+        #     except KeyboardInterrupt:
+        #         ans = 'n'
+        #     if ans == 'y':
+        #         break
+        #     elif ans == 'n':
+        #         sys.exit(0)
 
     def load_runs(self):
         lockFiles()
