@@ -21,6 +21,7 @@ To make webcast files being acessible, you should paste the `webcast1984` folder
 ```
 /var/www/boca/src/
 ```
+And configure the file `config.php` inside the folder
 
 ## Running
 
